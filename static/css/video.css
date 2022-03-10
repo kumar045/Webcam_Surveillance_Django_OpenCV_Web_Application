@@ -1,0 +1,99 @@
+
+
+body {
+   
+    background-color:#6847c4af;
+  
+    overflow: hidden; /* Hide scrollbars */
+  
+  }
+
+.btn {
+    position:absolute;
+    bottom:350px;
+    left:1365px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    color: green;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 7px 2px;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn:active {
+    background: #cccccc;
+  }
+  
+  
+  .btn1 {
+    position:absolute;
+    bottom:450px;
+    left:1365px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    color: green;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 70%;
+    box-shadow: 2px 2px 7px 2px;
+  }
+  
+  .btn1:hover {
+    cursor: pointer;
+  }
+  
+  .btn1:active {
+    background: #cccccc;
+  }
+  
+.video {
+	width: 1200px;
+  height:640px;
+  position: relative;
+  border: 3px solid; 
+  padding: 10px; 
+  /* box-shadow: h-offset v-offset blur */ 
+  box-shadow: 18px 17px 8px; 
+  }
+
+  
+  .btn2 {
+    position:absolute;
+    bottom:550px;
+    left:1365px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    color: green;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 70%;
+    box-shadow: 2px 2px 7px 2px;
+  }
+  
+  .btn2:hover {
+    cursor: pointer;
+  }
+  
+  .btn2:active {
+    background: #cccccc;
+  }

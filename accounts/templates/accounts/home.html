@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+    <title>OLIVE</title>
+  </head>
+  <body>
+    <img src="{% url 'video_feed' %}" class='img'>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/uicons-regular-rounded.css' %}">
+    <button class="btn" onclick="location.href='{% url 'dashboard' %}'"> Go Back</button>
+    <button class="btn1" onclick="request_access(this)" id="{{ 16 }}" >Record with Log</button>
+    <button class="s" onclick="stop_access(this)" id="{{ 15 }}" >Start_Again</button>
+  </body>
+  <script>
+    function request_access($this){
+        console.log("button clicked");
+        var request_data =$this.id;
+        console.log("data: " + request_data);
+        $.ajax({
+            url: "logging_info",
+            data : { request_data: request_data},
+            success : function(json) {
+                $("#request-access").hide();
+                console.log("requested access complete");
+            }
+        })
+    }
+
+    function stop_access($this){
+        console.log("button clicked");
+        var request_data =$this.id;
+        console.log("data: " + request_data);
+        $.ajax({
+            url: "logging_info",
+            data : { request_data: request_data},
+            success : function(json) {
+                $("#request-access").hide();
+                console.log("requested access complete");
+            }
+        })
+    }
+    
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+</html>

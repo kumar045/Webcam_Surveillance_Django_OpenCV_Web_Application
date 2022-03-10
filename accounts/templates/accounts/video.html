@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+
+
+</title>
+<link rel="stylesheet" type="text/css" href="{% static '/css/video.css' %}">
+</head>
+<body>
+    
+    <video  autoplay controls id="homevideo" width="1400px" height="650px" class="video" autoplay onended="run()">        
+        <source src="{% static '/video/record0.mp4' %}" type="video/mp4" codecs="MJPG"> 
+    </video>
+<button id="nextButton"  class="btn">next_video</button>
+<button id="prevButton" class="btn1">prev_video</button>
+<button class="btn2"  onclick="window.location.href='http://127.0.0.1:8000/'">Main</button>
+</body>
+<script>
+ var el = document.getElementById("nextButton");
+  if (el.addEventListener) {
+      el.addEventListener("click", yourNextFunction, false);
+  } else {
+      el.attachEvent('onclick', yourNextFunction);
+  }  
+  var video_count =0,
+    videoPlayer = document.getElementById("homevideo");
+
+function yourNextFunction (){
+      video_count++;
+     
+      if (video_count == 16) video_count = 1;
+      var nextVideo = "static/video/record"+video_count+".mp4";
+      videoPlayer.src = nextVideo;
+      videoPlayer.play();
+      console.log(video_count)
+}
+var el = document.getElementById("prevButton");
+  if (el.addEventListener) {
+      el.addEventListener("click", yourPREVFunction, false);
+  } else {
+      el.attachEvent('onclick', yourPREVFunction);
+  }  
+  var video_count =0,
+    videoPlayer = document.getElementById("homevideo");
+
+function yourPREVFunction (){
+      video_count--;
+      
+      if (video_count == 16) video_count = 1;
+      var nextVideo = "static/video/record"+video_count+".mp4";
+      videoPlayer.src = nextVideo;
+      videoPlayer.play();
+      console.log(video_count)
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+	body{
+		background-color: #48ca7c;
+		overflow: hidden; /* Hide scrollbars */
+
+		
+	}
+
+
+
+.reflection {
+	width: 800px;
+  height:640px;
+  position: relative;
+  border: 3px solid; 
+  padding: 10px; 
+  /* box-shadow: h-offset v-offset blur */ 
+  box-shadow: 18px 17px 8px; 
+}

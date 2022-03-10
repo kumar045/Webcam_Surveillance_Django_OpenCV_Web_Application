@@ -1,0 +1,64 @@
+
+body {
+    background:url("https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31-800x450.jpg")  no-repeat  fixed;;
+
+    background-color:var(--blue);
+     background-size: cover;
+
+   /* overflow: hidden; /* Hide scrollbars */
+
+}
+
+h1{
+
+  color:whitesmoke;
+  text-align: center;
+}
+#zoom
+{
+  color:rgb(225, 65, 172);
+
+}
+#rotate
+{
+
+  color:rgb(65, 225, 126);
+
+
+}
+#b4
+{
+
+  position:absolute;
+  top:50px;
+  left:210px;
+}
+#b3
+{
+
+  position:absolute;
+  top:50px;
+  left:89px;
+}
+
+#b1
+{
+
+  position:absolute;
+  top:100px;
+  left:150px;
+}
+#b2
+{
+
+  position:absolute;
+  top:0px;
+  left:150px;
+}
+#zoom
+{
+  position:absolute;
+  top:-300px;
+  left:0px;
+
+}

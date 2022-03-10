@@ -1,0 +1,172 @@
+
+body {
+   
+  background-color:#ccffbd;
+
+  overflow: hidden; /* Hide scrollbars */
+
+}
+
+.img {
+	width: 1200px;
+  height:640px;
+  position: relative;
+  border: 3px solid; 
+  padding: 10px; 
+  /* box-shadow: h-offset v-offset blur */ 
+  box-shadow: 18px 17px 8px; 
+  }
+
+
+
+.b4
+{
+
+  position:absolute;
+  top:50px;
+  left:210px;
+ 
+}
+.b3
+{
+
+  position:absolute;
+  top:50px;
+  left:89px;
+ 
+}
+
+.b1
+{
+
+  position:absolute;
+  top:100px;
+  left:150px;
+ 
+}
+.b2
+{
+
+  position:absolute;
+  top:0px;
+  left:150px;
+ 
+}
+.icon-button {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  color: #333333;
+  background: #dddddd;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px 2px;
+}
+
+.icon-button:hover {
+  cursor: pointer;
+}
+
+.icon-button:active {
+  background: #cccccc;
+}
+.b11
+{
+
+  position:absolute;
+  top:-130px;
+  left:50px;
+ 
+}
+.b21
+{
+
+  position:absolute;
+  top:-180px;
+  left:50px;
+ 
+}
+
+.btn {
+  position:absolute;
+  bottom:350px;
+  left:1365px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  color: green;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 70%;
+  box-shadow: 2px 2px 7px 2px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background: #cccccc;
+}
+
+
+.btn1 {
+  position:absolute;
+  bottom:450px;
+  left:1365px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  color: green;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 70%;
+  box-shadow: 2px 2px 7px 2px;
+}
+
+.btn1:hover {
+  cursor: pointer;
+}
+
+.btn1:active {
+  background: #cccccc;
+}
+
+
+.s {
+  position:absolute;
+  bottom:550px;
+  left:1365px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  color: green;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 70%;
+  box-shadow: 2px 2px 7px 2px;
+}
+
+.s:hover {
+  cursor: pointer;
+}
+
+.s:active {
+  background: #cccccc;
+}
